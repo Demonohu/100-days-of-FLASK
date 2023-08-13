@@ -1,0 +1,3 @@
+{
+  "python.analysis.extraPaths": ["./Week_10/venv/Lib/site-packages"]
+}

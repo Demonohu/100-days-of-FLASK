@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERS LIST</title>
+</head>
+<body>
+    <h2>Below is the list of registered users:</h2>
+    <table border="5">
+      <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Username</td>
+      </thead>
+
+      {% for user_data in users %}
+<!-- <p>Name: {{ user_data.name }}</p>
+    <p>Email: {{ user_data.email }}</p>
+    <p>Age: {{ user_data.age }}</p> -->
+      <tr>
+        <td>{{ user_data.id }}</td>
+        <td>{{ user_data.name }}</td>
+        <td>{{ user_data.email }}</td>
+        <td>{{ user_data.username }}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+    <br /><br />
+
+    <a href="/">Go to home</a>
+</body>
+</html>
